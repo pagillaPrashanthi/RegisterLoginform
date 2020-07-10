@@ -1,0 +1,66 @@
+body
+{
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(background1.jpg);
+height:100vh;
+background-size:cover;
+background-position:center;
+}
+form{
+position:center;
+z-index:1;
+background-color:#2F4F4F;
+max-width:360px;
+margin:0 auto 100px;
+padding:45px;
+text-align:center;
+}
+form input[type=text]{
+font-family:"Roboto",sans-serif;
+outline:1;
+background:#f2f2f2;
+width:80%;
+border:0;
+margin:0 0 15px;
+padding:10px;
+box-sizing:border-box;
+font-size:14px;
+}
+form input[type=password]{
+font-family:"Roboto",sans-serif;
+outline:1;
+background:#f2f2f2;
+width:80%;
+border:0;
+margin:0 0 15px;
+padding:10px;
+box-sizing:border-box;
+font-size:14px;
+}
+form input[type=button]{
+font-family:"Roboto",sans-serif;
+text-transform:uppercase;
+outline:0;
+background:#D2B48C;
+width:80%;
+border:0;
+padding:10px;
+color:#FFFFFF;
+font-size:14px;
+cursor:pointer;
+}
+form input[type=reset]{
+font-family:"Roboto",sans-serif;
+text-transform:uppercase;
+outline:0;
+background:#D2B48C;
+width:80%;
+border:0;
+padding:10px;
+color:#FFFFFF;
+font-size:14px;
+cursor:pointer;
+}
+
+form input type=button:hover,.form button:active{
+background:#43A047;
+}

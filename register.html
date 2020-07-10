@@ -1,0 +1,38 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><br><br><br>
+<script language="javascript">
+function validate()	
+{
+var flag=1;
+if(document.myform.id.value==""||
+document.myform.emailid.value==""||document.myform.pwd.value=="")
+{
+
+alert("Username,Email and Password must be filled")
+flag=0;
+}
+if(flag==1)
+{
+alert("VALID INPUT");
+window.open("login.html","right");
+}
+else
+{
+alert("INVALID INPUT");
+//document.myform.focus();
+}
+}
+</script>
+<form name="myform">
+<div align="center"><pre>
+USERNAME: &nbsp;&nbsp;<input type="text" name="id" placeholder="name"><br>
+EMAILID:  &nbsp;&nbsp;<input type="text" name="emailid" placeholder="www.example.com"<br><br>
+PASSWORD: &nbsp;&nbsp;<input type="password" name="pwd" placeholder="password"><br><br></pre>
+<input type="button" value="Register" onClick="validate()">&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</form>
+</body>
+</html>

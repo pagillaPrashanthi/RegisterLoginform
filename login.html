@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" href="login.css">
+</head>
+<body><br><br><br>
+<script language="javascript">
+function validate()	
+{
+var flag=1;
+if(document.myform.id.value==""||
+document.myform.pwd.value=="")
+{
+
+alert("LoginId and Password must be filled")
+flag=0;
+}
+if(flag==1)
+{
+alert("VALID INPUT");
+window.open("catalog.html","right");
+}
+else
+{
+alert("INVALID INPUT");
+//document.myform.focus();
+}
+}
+</script>
+<form name="myform">
+<div align="center"><pre><b>
+LOGIN ID: <input type="text" name="id" placeholder="Login Id"><br><br>
+PASSWORD: <input type="password" name="pwd" placeholder="Password"><br><br>
+</pre></b>
+<input type="button" value="ok" onClick="validate()"><br><br>
+<input type="reset"  value="clear">
+</div>
+</form>
+</body>
+</html>
